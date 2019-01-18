@@ -1,0 +1,988 @@
+/*首页背景轮播图*/
+#swiper-container1{
+	width: 100%;
+	height: 100%;
+	padding-top: 80px;
+}
+#swiper-container1 img{
+	height: 100%;
+	width: 100%;
+}
+.swiper-slide{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+#dian .swiper-pagination-bullet{
+	width: 196px;
+	height: 72px;
+	border-radius: 0px;
+	border: 2px solid #fff;
+	background: url(../img/1538238871.jpg);
+	background-size: 100% 100%;
+}
+#dian .swiper-pagination-bullet:first-child{
+	background: url(../img/1538238854.jpg);
+	background-size: 100% 100%;
+}
+#dian .swiper-pagination-bullet-active{
+	border: 2px solid #09AB6B;
+}
+/*内容部分-景 住 食 玩-*/
+.our-services{
+	width: 100%;
+	height: 284px;
+	display: flex;
+	justify-content: center;
+}
+.our-services ul{
+	width: 1143px;
+	height: 100%;
+	box-shadow: 0px 2px 3px #eee;
+	display: flex;
+	justify-content: space-between;
+}
+.our-services ul li{
+	width: 25%;
+	height: 100%;
+	overflow: hidden;
+	background: #fff;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+.our-services1{
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.our-services1 p{
+	font-size: 17px;
+	margin-top: 5px;
+	font-weight: 600;
+}
+.our-services1 span{
+	font-size: 14px;
+	margin-top: 5px;
+	color: #999;
+}
+.our-services1:hover p{
+	color: #fff;
+}
+.our-services1:hover span{
+	color: #fff;
+}
+/*双向过渡覆盖背景动画*/
+.our-services2{
+	width: 0px;
+	height: 100%;
+	z-index: 10;
+	position: absolute;
+	background: #09AB6B;
+	transition: width 0.5s
+}
+.our-services3{
+	width: 0px;
+	height: 100%;
+	z-index: 10;
+	position: absolute;
+	right: 0px;
+	background: #09AB6B;
+	transition: width 0.5s
+}
+.our-services ul li:hover .our-services2{
+	width: 50%;
+}
+.our-services ul li:hover .our-services3{
+	width: 50%;
+}
+/*内容部分-胤龙湖简介*/
+.introduce{
+	width: 100%;
+	height: 700px;
+	display: flex;
+	align-items: center;
+}
+.introduce1{
+	width: 100%;
+	height: 500px;
+}
+.introduce2{
+	width: 1120px;
+	height: 500px;
+	margin: 0px auto;
+	position: relative;
+	display: flex;
+}
+.donghua1{
+	width: 1px;
+	height: 10px;
+	background: #09AB6B;
+	opacity: 0;
+	position: absolute;
+}
+@keyframes donghua1{
+	0%{opacity: 1;}
+	100%{opacity: 1;width: 100%;}
+}
+.donghua2{
+	width: 10px;
+	height: 1px;
+	background: #09AB6B;
+	opacity: 0;
+	position: absolute;
+	right: 0px;
+}
+@keyframes donghua2{
+	0%{opacity: 1;}
+	100%{opacity: 1;height: 100%;}
+}
+.donghua3{
+	width: 1px;
+	height: 10px;
+	background: #09AB6B;
+	opacity: 0;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+@keyframes donghua3{
+	0%{opacity: 1;}
+	100%{opacity: 1;width: 100%;}
+}
+.donghua4{
+	width: 10px;
+	height: 1px;
+	background: #09AB6B;
+	opacity: 0;
+	position: absolute;
+	bottom: 0px;
+}
+@keyframes donghua4{
+	0%{opacity: 1;}
+	100%{opacity: 1;height: 100%;}
+}
+.wenji{
+	width: 520px;
+	height: 320px;
+	margin-top: 60px;
+	margin-left: 60px;
+	position: relative;
+}
+@keyframes wenji{
+	0%{opacity: 0;top: -250px;}
+	20%{opacity: 0.2;top: -200px;}
+	40%{opacity: 0.4;top: -150px;}
+	60%{opacity: 0.6;top: -100px;}
+	80%{opacity: 0.8;top: -50px;}
+	100%{opacity: 1;top: 0px;}
+}
+.wenji h1{
+	font-size: 26px;
+	color: rgb(9,171,107);
+	font-weight: bold;
+	display: inline-block;
+	font-family: "宋体";
+	box-shadow: 0px 2px 0px #eee;
+	margin-bottom: 15px;
+}
+.wenji h2{
+	font-size: 12px;
+	margin: 10px 0px 30px;
+	color: rgb(59,59,59);
+	font-weight: 100;
+}
+.wenji h3{
+	width: 34px;
+	height: 2px;
+	background: rgb(9,171,107);
+}
+.wenji h4{
+	font-size: 13px;
+	color: rgb(153,153,153);
+	line-height: 24px;
+	font-weight: 100;
+	margin-top: 25px;
+}
+.wenji h5{
+	width: 100%;
+	height: 30px;
+	
+	margin: 15px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.wenji h5 a{
+	width: 130px;
+	height: 100%;
+	box-shadow: 0px 2px 10px #eee;
+	display: inline-block;
+}
+.more-left{
+	width: 100px;
+	height: 30px;
+	float: left;
+	position: relative;
+}
+.donghua5{
+	width: 0px;
+	height: 30px;
+	z-index: 10;
+	background: #09AB6B;
+	transition: width linear 0.2s;
+}
+.wenji h5 a:hover .donghua5{
+	width: 100px;
+}
+.more{
+	width: 100px;
+	height: 30px;
+	font-size: 14px;
+	font-weight: 100;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #09AB6B;
+}
+.wenji h5 a:hover .more{
+	color: #fff;
+}
+.more-right{
+	width: 30px;
+	height: 30px;
+	float: right;
+	position: relative;
+	background: rgb(9,171,107);
+}
+.donghua6{
+	width: 0px;
+	height: 30px;
+	background: #fff;
+	position: absolute;
+	transition: width linear 0.3s 0.2s;
+}
+.wenji h5 a:hover .donghua6{
+	width: 30px;
+}
+.jt{
+	width: 30px;
+	height: 30px;
+	font-size: 19px;
+	color: #fff;
+	position: absolute;
+	font-weight: 600;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wenji h5 a:hover .jt{
+	color: #09AB6B;
+}
+.tu-1{
+	width: 520px;
+	height: 300px;
+	margin-top: 100px;
+	position: absolute;
+	left: 700px; 
+}
+@keyframes tu{
+	0%{opacity: 0;left: 1200px;}
+	20%{opacity: 0.2;left: 1100px;}
+	40%{opacity: 0.4;left: 1000px;}
+	60%{opacity: 0.6;left: 900px;}
+	80%{opacity: 0.8;left: 800px;}
+	100%{opacity: 1;left: 700px;}
+}
+/*内容部分-景 住 食 玩-介绍*/
+.catalog{
+	width: 100%;
+	height: 2140px;
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.catalog-top{
+	width: 100%;
+	height: 122px;
+	margin-bottom: 40px;
+}
+.catalog-top1{
+	width: 1140px;
+	height: 100%;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.catalog-top2{
+	width: 100%;
+	height: 62px;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	
+}
+@keyframes catalogtop{
+	0%{opacity: 0;top: -80px;}
+	25%{opacity: 0.25;top: -60px;}
+	50%{opacity: 0.5;top: -40px;}
+	75%{opacity: 0.75;top: -20px;}
+	100%{opacity: 1;top: 0px;}
+}
+.catalog-top2 h1{
+	width: 100%;
+	height: 1px;
+	background: #09AB6B;
+}
+.catalog-top2 h2{
+	padding: 0px 35px;
+	position: absolute;
+	background: #fff;
+	font-size: 40px;
+	font-weight: 100;
+}
+.catalog-top1 p{
+	font-size: 20px;
+	color: rgb(153,153,153);
+	margin-bottom: 5px;
+}
+.catalog-top1 span{
+	font-size: 12px;
+	color: rgb(9,171,107);
+}
+/*休闲度假*/
+.directory1{
+	width: 1140px;
+	height: 363px;
+	margin-bottom: 20px;
+	display: flex;
+	position: relative;
+}
+@keyframes one{
+	0%{opacity: 0.6;left: 400px;}
+	25%{opacity: 0.7;left: 300px;}
+	50%{opacity: 0.8;left: 200px;}
+	75%{opacity: 0.9;left: 100px;}
+	100%{opacity: 1;left: 0px;}
+}
+.directory1-left{
+	width: 531px;
+	height: 231px;
+	padding: 20px;
+}
+.directory1-left p{
+	font-size: 16px;
+	color: rgb(9,171,107);
+}
+.directory1-left h1{
+	font-size: 30px;
+	font-weight: 100;
+}
+.directory1-left h2{
+	width: 65px;
+	height: 3px;
+	background: #09AB6B;
+	margin: 15px 0px 30px 0px;
+}
+.directory1-left h3{
+	font-size: 16px;
+	font-weight: 100;
+	margin-bottom: 5px;
+	color: rgb(153,153,153);
+}
+.directory1-left h4{
+	font-size: 14px;
+	font-weight: 100;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+}
+.directory1-right{
+	width: 545px;
+	height: 363px;
+	position: relative;
+	padding: 0px 13px;
+}
+.directory1-right img{
+	width: 100%;
+	height: 100%;
+}
+.directory1-right .one{
+	width: 75px;
+	height: 95px;
+	font-size: 48px;
+	font-weight: bold;
+	color: #fff;
+	background: #09AB6B;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: -30px;
+	right: 50px;
+}
+/*湖中岛*/
+.directory2{
+	width: 1140px;
+	height: 363px;
+	margin-bottom: 20px;
+	display: flex;
+	position: relative;
+}
+@keyframes two{
+	0%{opacity: 0.6;right: 400px;}
+	25%{opacity: 0.7;right: 300px;}
+	50%{opacity: 0.8;right: 200px;}
+	75%{opacity: 0.9;right: 100px;}
+	100%{opacity: 1;right: 0px;}
+}
+.directory2-left{
+	width: 531px;
+	height: 231px;
+	padding: 20px;
+}
+.directory2-left h1{
+	font-size: 30px;
+	font-weight: 100;
+}
+.directory2-left h2{
+	width: 65px;
+	height: 3px;
+	background: #09AB6B;
+	margin: 15px 0px 30px 0px;
+}
+.directory2-left h3{
+	font-size: 16px;
+	font-weight: 100;
+	margin-bottom: 5px;
+	color: rgb(153,153,153);
+}
+.directory2-left h4{
+	font-size: 14px;
+	font-weight: 100;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+}
+.directory2-right{
+	width: 545px;
+	height: 363px;
+	position: relative;
+	padding: 0px 13px;
+}
+.directory2-right img{
+	width: 100%;
+	height: 100%;
+}
+.directory2-right .two{
+	width: 75px;
+	height: 95px;
+	font-size: 48px;
+	font-weight: bold;
+	color: #fff;
+	background: #09AB6B;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: -30px;
+	left: 50px;
+}
+/*商务会议中心*/
+.directory3{
+	width: 1140px;
+	height: 363px;
+	margin-bottom: 20px;
+	display: flex;
+	position: relative;
+}
+@keyframes three{
+	0%{opacity: 0.6;left: 400px;}
+	25%{opacity: 0.7;left: 300px;}
+	50%{opacity: 0.8;left: 200px;}
+	75%{opacity: 0.9;left: 100px;}
+	100%{opacity: 1;left: 0px;}
+}
+.directory3-left{
+	width: 531px;
+	height: 231px;
+	padding: 20px;
+}
+.directory3-left p{
+	font-size: 16px;
+	color: rgb(9,171,107);
+}
+.directory3-left h1{
+	font-size: 30px;
+	font-weight: 100;
+}
+.directory3-left h2{
+	width: 65px;
+	height: 3px;
+	background: #09AB6B;
+	margin: 15px 0px 30px 0px;
+}
+.directory3-left h3{
+	font-size: 16px;
+	font-weight: 100;
+	margin-bottom: 5px;
+	color: rgb(153,153,153);
+}
+.directory3-left h4{
+	font-size: 14px;
+	font-weight: 100;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+}
+.directory3-right{
+	width: 545px;
+	height: 363px;
+	position: relative;
+	padding: 0px 13px;
+}
+.directory3-right img{
+	width: 100%;
+	height: 100%;
+}
+.directory3-right .three{
+	width: 75px;
+	height: 95px;
+	font-size: 48px;
+	font-weight: bold;
+	color: #fff;
+	background: #09AB6B;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: -30px;
+	right: 50px;
+}
+/*优美的垂钓环境*/
+.directory4{
+	width: 1140px;
+	height: 363px;
+	margin-bottom: 20px;
+	display: flex;
+	position: relative;
+}
+@keyframes four{
+	0%{opacity: 0.6;right: 400px;}
+	25%{opacity: 0.7;right: 300px;}
+	50%{opacity: 0.8;right: 200px;}
+	75%{opacity: 0.9;right: 100px;}
+	100%{opacity: 1;right: 0px;}
+}
+.directory4-left{
+	width: 531px;
+	height: 231px;
+	padding: 20px;
+}
+.directory4-left p{
+	font-size: 16px;
+	color: rgb(9,171,107);
+}
+.directory4-left h1{
+	font-size: 30px;
+	font-weight: 100;
+}
+.directory4-left h2{
+	width: 65px;
+	height: 3px;
+	background: #09AB6B;
+	margin: 15px 0px 30px 0px;
+}
+.directory4-left h3{
+	font-size: 16px;
+	font-weight: 100;
+	margin-bottom: 5px;
+	color: rgb(153,153,153);
+}
+.directory4-left h4{
+	font-size: 14px;
+	font-weight: 100;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+}
+.directory4-right{
+	width: 545px;
+	height: 363px;
+	position: relative;
+	padding: 0px 13px;
+}
+.directory4-right img{
+	width: 100%;
+	height: 100%;
+}
+.directory4-right .four{
+	width: 75px;
+	height: 95px;
+	font-size: 48px;
+	font-weight: bold;
+	color: #fff;
+	background: #09AB6B;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: -30px;
+	left: 50px;
+}
+/*生态农业基地*/
+.directory5{
+	width: 1140px;
+	height: 363px;
+	margin-bottom: 20px;
+	display: flex;
+	position: relative;
+}
+@keyframes five{
+	0%{opacity: 0.6;left: 400px;}
+	25%{opacity: 0.7;left: 300px;}
+	50%{opacity: 0.8;left: 200px;}
+	75%{opacity: 0.9;left: 100px;}
+	100%{opacity: 1;left: 0px;}
+}
+.directory5-left{
+	width: 531px;
+	height: 231px;
+	padding: 20px;
+}
+.directory5-left p{
+	font-size: 16px;
+	color: rgb(9,171,107);
+}
+.directory5-left h1{
+	font-size: 30px;
+	font-weight: 100;
+}
+.directory5-left h2{
+	width: 65px;
+	height: 3px;
+	background: #09AB6B;
+	margin: 15px 0px 30px 0px;
+}
+.directory5-left h3{
+	font-size: 16px;
+	font-weight: 100;
+	margin-bottom: 5px;
+	color: rgb(153,153,153);
+}
+.directory5-left h4{
+	font-size: 14px;
+	font-weight: 100;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+}
+.directory5-right{
+	width: 545px;
+	height: 363px;
+	position: relative;
+	padding: 0px 13px;
+}
+.directory5-right img{
+	width: 100%;
+	height: 100%;
+}
+.directory5-right .five{
+	width: 75px;
+	height: 95px;
+	font-size: 48px;
+	font-weight: bold;
+	color: #fff;
+	background: #09AB6B;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: -30px;
+	right: 50px;
+}
+/*内容部分-服务项目-*/
+.serve{
+	width: 100%;
+	height: 780px;
+	margin: 30px 0px;
+	display: flex;
+	justify-content: center;
+}
+.serve1{
+	width: 1170px;
+	height: 661px;
+	position: relative;
+}
+.serve2{
+	width: 100%;
+	height: 116px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+.serve2 p{
+	font-size: 30px;
+	font-weight: 700;
+}
+.serve2 p span{
+	color: #09AB6B;
+}
+.serve3{
+	width: 70px;
+	height: 1px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.serve3 h1{
+	width: 10px;
+	height: 1px;
+	background: #09AB6B;
+}
+.serve3 h2{
+	width: 35px;
+	height: 1px;
+	background: #09AB6B;
+}
+.serve4{
+	width: 100%;
+	height: 482px;
+	margin-top: 50px;
+}
+#serve5{
+	width: 100%;
+	height: 83%;
+}
+#dian1{
+	width: 100%;
+	margin: 0px auto;
+	display: flex;
+	justify-content: center;
+}
+#dian1 .swiper-pagination-custom {
+	color: #333;
+}
+#dian1 .active{
+	color: #09AB6B;
+}
+#dian1{
+	height: 50px;
+	position: absolute;
+	top: 90px;
+}
+#dian1 span {
+	margin: 0px 10px;
+	cursor:pointer;/*光标效果*/
+}
+/*轮播图前进后台按钮修改*/
+#dh-left{
+	position: absolute;
+	left: 530px;
+	top: 623px;
+	outline: none;
+	box-shadow: 0px 0px 3px #999;
+	width: 32px;
+	height: 32px;
+	border-radius: 20px;
+	background: #fff;
+}
+#dh-left i{
+	width: 0px;
+	height: 0px;
+	border-bottom: 5px solid transparent;
+	border-top: 5px  solid transparent;
+	border-right: 5px solid #09AB6B;
+	position: absolute;
+	left: 12px;
+	top: 12px;
+}
+#dh-left:hover{
+	background: #09AB6B;
+}
+#dh-left:hover i{
+	border-right: 5px solid #fff;
+}
+#dh-right{
+	position: absolute;
+	left: 608px;
+	top: 623px;
+	outline: none;
+	box-shadow: 0px 0px 3px #999;
+	width: 32px;
+	height: 32px;
+	border-radius: 20px;
+	background: #fff;
+}
+#dh-right i{
+	width: 0px;
+	height: 0px;
+	border-bottom: 5px solid transparent;
+	border-top: 5px  solid transparent;
+	border-left: 5px solid #09AB6B;
+	position: absolute;
+	left: 14px;
+	top: 12px;
+}
+#dh-right:hover{
+	background: #09AB6B;
+}
+#dh-right:hover i{
+	border-left: 5px solid #fff;
+}
+/*轮播图内容部分图片*/
+#serve5 .swiper-slide{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#serve5 .swiper-slide img{
+	width: 100%;
+	height: 295px;
+}
+#serve5 .swiper-slide .div-1{
+	width: 388px;
+	height: 88px;
+	margin-top: 15px;
+	border: 1px solid #eee;
+	position: relative;
+}
+#serve5 .swiper-slide .div-1 div{
+	width: 365px;
+	height: 52px;
+	padding: 18px 0px 20px 25px;
+}
+#serve5 .swiper-slide .div-1 div a{
+	font-size: 18px;
+	font-weight: 600;
+	color: #333;
+}
+#serve5 .swiper-slide .div-1 div h1{
+	width: 196px;
+	font-size: 12px;
+	margin-top: 5px;
+	color: rgb(153,153,153);
+	font-weight: 600;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#serve5 .swiper-slide .div-1 div a:hover{
+	color: #09AB6B;
+}
+#serve5 .swiper-slide .div-1 div span{
+	width: 10px;
+	height: 0px;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	background: #09AB6B;
+	transition: height linear 0.5s; 
+}
+#serve5 .swiper-slide:hover .div-1 div span{
+	height: 88px;
+}
+#serve5 .swiper-slide .div-1 div i{
+	width: 10px;
+	height: 88px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background: #09AB6B;
+	transition: top linear 0.5s;
+}
+#serve5 .swiper-slide:hover .div-1 div i{
+	top: 90px;
+}
+/*热门新闻*/
+.news{
+	width: 100%;
+	height: 276px;
+	display: flex;
+	justify-content: center;
+}
+.news ul{
+	width: 1150px;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.news ul li{
+	width: 345px;
+	height: 246px;
+	box-shadow: 0px 0px 9px #999;
+	position: relative;
+}
+.news ul li img{
+	width: 100%;
+	height: 100%;
+}
+.news1{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: #eee;
+	transition: transform 1s;
+}
+.news ul li:hover .news1{
+	background-color:rgba(9,171,107,0.6);
+	transform: translateX(15px) translateY(15px) rotateZ(5deg); 
+}
+.news ul li:hover p{
+	color: #fff;
+}
+.news ul li:hover h2{
+	color: #fff;
+}
+.news ul li:hover span{
+	color: #fff;
+}
+.news ul li:hover h1{
+	background: #fff;
+}
+.news1 p{
+	padding: 25px 35px 10px 35px;
+	font-size: 14px;
+	color: rgb(153,153,153);
+}
+.news1 h1{
+	width: 15px;
+	height: 1px;
+	margin-left: 35px;
+	background: #09AB6B;
+}
+.news1 h2{
+	font-size: 16px;
+	color: rgb(59,59,59);
+	line-height: 24px;
+	padding: 0px 35px;
+	margin-top: 30px;
+}
+.news1 span{
+	font-size: 14px;
+	color: rgb(153,153,153);
+	padding: 4px 35px;
+	margin-top: 15px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+}
